@@ -1,8 +1,27 @@
-li:nth-of-type(1) {
-    color: green
-} 
+@import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
 
-ol > .p1 {
-    color: blue; font-weight: bold; font-size: 50px;
+body {
+  font-family: "Urbanist", sans-serif;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* .content {
+    padding: 16px;
+} */
+
+.title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
